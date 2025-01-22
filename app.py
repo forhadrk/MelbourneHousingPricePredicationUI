@@ -7,7 +7,7 @@ MODEL_PATH = "reduced_random_forest.pkl"
 
 # Set the browser title and favicon
 st.set_page_config(
-    page_title="House Price Prediction App",  # Browser tab title
+    page_title="Melbourne House Price Prediction App",  # Browser tab title
     page_icon="🏠",  # Favicon (emoji or path to an image file)
     layout="centered",  # Layout can be "centered" or "wide"
 )
@@ -27,7 +27,7 @@ def load_model():
 model = load_model()
 
 # Streamlit app title and description
-st.title("🏠 House Price Prediction App")
+st.title("🏠 Melbourne House Price Prediction App")
 st.subheader("🔍 Predict house prices based on key features.")
 st.write("This app uses a machine learning model to predict house prices.")
 
@@ -56,5 +56,9 @@ if st.button("Predict Price"):
         st.success(f"🏡 Predicted House Price: **${predicted_price:,.2f}**")
 
 # Footer with credits
+# Footer with credits, dataset link, and LinkedIn profile
 st.markdown("---")
-st.markdown("💡 Built with Streamlit by Forhad Hossain | House Price Prediction App")
+st.markdown("💡 Built with Streamlit by [Forhad Hossain](https://www.linkedin.com/in/forhad-hossain-aba82a123/) | House Price Prediction App")
+st.markdown("📊 Dataset used: [Melbourne Housing Snapshot](https://www.kaggle.com/datasets/dansbecker/melbourne-housing-snapshot)")
+st.markdown("🤖 Trained Models: **Linear Regression**, **Random Forest**, **Decision Tree**, **Support Vector Regressor**")
+st.markdown("🏆 **Best Model:** Random Forest")
