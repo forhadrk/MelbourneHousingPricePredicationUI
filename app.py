@@ -27,8 +27,8 @@ def load_model():
 model = load_model()
 
 # Streamlit app title and description
-st.title("🏠 Melbourne House Price Prediction App")
-st.subheader("🔍 Predict house prices based on key features.")
+st.title("🏠 House Price Prediction App")
+st.subheader("🔍 Predict house prices of Melbourne based on key features.")
 st.write("This app uses a machine learning model to predict house prices.")
 
 # Input fields for features
