@@ -3,7 +3,7 @@ import joblib
 import os
 
 # Path for the saved model
-MODEL_PATH = "random_forest_model.pkl"
+MODEL_PATH = "reduced_random_forest.pkl"
 
 # Set the browser title and favicon
 st.set_page_config(
